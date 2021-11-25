@@ -1,0 +1,82 @@
+<script>
+    alert ("BIENVENIDO AL JUEGO DE BATALLA NAVAL");
+    alert ("Cada jugador tiene un tablero de 10 x 10: EL JUEGO CONSISTE EN DESTRIR AL OTRO JUGADOR EN BASE DE TIROS DE NAVIOS")
+    alert ("Siempre introdusca la cordenada mencionando la posicion de la fila y despues la posicion de la columna")
+var v=prompt("Ingrese el nombre del jugador 1");
+var x= "x"
+var dimensions=
+[  [x,x,x,x,x,x,x,x,x,x],
+   [x,x,x,x,x,x,x,x,x,x],
+   [x,x,x,x,x,x,x,x,x,x],
+   [x,x,x,x,x,x,x,x,x,x],
+   [x,x,x,x,x,x,x,x,x,x],
+   [x,x,x,x,x,x,x,x,x,x],
+   [x,x,x,x,x,x,x,x,x,x],
+   [x,x,x,x,x,x,x,x,x,x],
+   [x,x,x,x,x,x,x,x,x,x],
+   [x,x,x,x,x,x,x,x,x,x]
+];
+console.log(v);
+console.log(dimensions);
+var f=prompt("Posicion del Primer Barco")
+var g=prompt("Posicion del Segundo Barco")
+var h=prompt("Posicion del Tercer Barco")
+var y=prompt("Ingrese el nombre del jugador 2");
+var dimensions2=
+[  [x,x,x,x,x,x,x,x,x,x],
+   [x,x,x,x,x,x,x,x,x,x],
+   [x,x,x,x,x,x,x,x,x,x],
+   [x,x,x,x,x,x,x,x,x,x],
+   [x,x,x,x,x,x,x,x,x,x],
+   [x,x,x,x,x,x,x,x,x,x],
+   [x,x,x,x,x,x,x,x,x,x],
+   [x,x,x,x,x,x,x,x,x,x],
+   [x,x,x,x,x,x,x,x,x,x],
+   [x,x,x,x,x,x,x,x,x,x]
+];
+console.log(y);
+console.log(dimensions2);
+var z=prompt("Posicion del Primer Barco:")
+var a=prompt("Posicion del Segundo Barco:")
+var b=prompt("Posicion del Tercer Barco:")
+switch (f,g,h,z,a,b) {
+    case "jugador 1":
+    var k=prompt ("turno del jugador 1");
+                if (k == z){
+                    alert ("Has undido un barco")
+                    console.log(k);
+                }
+                if (k == a){
+                    alert ("Has undido un barco")
+                    console.log(k);
+                }
+                if (k == b){
+                    alert ("Has undido un barco")
+                    console.log(k);
+                }
+                else{
+                    alert ("No has dado en el blanco")
+        break;
+                }
+            
+    case "jugador 2":
+    var n=prompt ("turno del jugador 2");
+                if (n == f){
+                    alert ("Has undido un barco")
+                    console.log(n);
+                }
+                if (n == g){
+                    alert ("Has undido un barco")
+                    console.log(n);
+                }
+                if (n == h){
+                    alert ("Has undido un barco")
+                    console.log(n);
+                }
+                else{
+                    alert ("No has dado en el blanco")
+        break;
+}
+}
+alert = ("Has Ganado");
+</script>
